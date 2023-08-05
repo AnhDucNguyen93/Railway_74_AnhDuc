@@ -81,6 +81,8 @@ public class Exercise1 {
             System.out.println("So thu tu SecondrtStudent:  "+ SecondrtStudent.secondrtCount );
         }
 
-        System.out.println("So thu tu:  "+ PrimaryStudent.count);
+        System.out.println("Tong so SV:  "+ PrimaryStudent.count);
     }
+    //Question8
+
 }

@@ -20,6 +20,6 @@ public class Program1 {
     public static void main(String[] args) {
 
         //Question1();
-        Question1();
+        Question2();
     }
 }

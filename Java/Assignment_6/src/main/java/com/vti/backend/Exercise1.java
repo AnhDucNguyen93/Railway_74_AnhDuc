@@ -40,7 +40,12 @@ public  class Exercise1 {
             switch (choose) {
                 case 1:
                     qlcb.addCanBo();
-                    return;
+                    System.out.println("Chon 1 de tiep tuc nhap----- Chon 2 de thoat...");
+                    int choose1 = scanner.nextInt();
+                   if (choose1==1){
+                       break;
+                   }
+                   return;
                 case 2:
                     qlcb.findByName();
                     return;
