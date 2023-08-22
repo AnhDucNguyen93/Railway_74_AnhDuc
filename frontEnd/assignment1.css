@@ -1,0 +1,51 @@
+h2.center li,ol {
+    margin: auto;
+    color: red;
+}
+div.cohi ul {
+    color: aqua;
+}
+div.com>ol {
+    color: blue;
+}
+div.com ul{
+    color: rgb(226, 43, 101);
+}
+div.center {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+table.table {
+    margin: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+table.table th, td{
+    border: 1px solid red;
+}
+div.noidung{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+div.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+div.chuthich p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    background-color: rgb(155, 158, 158);
+}
+table.table2, table.table2 th, td{
+    border: 1px solid red;
+}
+div.fixed{
+    position: fixed;
+    top: 2px;
+    right: 2px;
+}

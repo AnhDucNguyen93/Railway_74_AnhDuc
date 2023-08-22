@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment3</title>
+    <link rel="stylesheet" href="assignment3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body class="assignment3">
+    <h2>Exercise 4 (Optional): Output</h2>
+    <div>
+        <h3>Question 1 alert</h3>
+        <button type="button" class="btn btn-success" onclick="hellWorld()">Click Me!</button>
+    </div>
+    <hr>
+    <div>
+        <h3>Question 2: document.write</h3>
+        <button type="button" class="btn btn-success" onclick="hellWorld1()">Click Me!</button>
+        <p id="q2"></p>
+    </div>
+    <hr>
+    <div>
+        <h3>Question 3: console.log()</h3>
+        <button type="button" class="btn btn-success" onclick="q3()">Click Me!</button>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Question 4</h3>
+        <button type="button" class="btn btn-success" onclick="q4()">Click Me!</button>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Question 5</h3>
+        <input type="text" id="ques4_5">
+        <button onclick="ques4_5()">Lấy thông tin</button>
+    </div>
+    <hr>
+    <div>
+        <h3>Question 6</h3>
+        <button type="button" class="btn btn-success" onclick="ques4_6()">Click Me!</button>
+        <div id="q6"></div>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Question 7</h3>
+        <button type="button" class="btn btn-success" onclick="ques4_7()">Thời gian</button>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Question 8</h3>
+        <button type="button" class="btn btn-success" onclick="ques4_8()">Nhập</button>
+        <div id="ques4_8"></div>
+    </div>
+    <hr>
+
+    <script>
+        var a = (5 > 10);
+        document.write("két qua :  " + a);
+    </script>
+    <hr>
+
+    <div>
+        <h3>Question 10</h3>
+        <button type="button" class="btn btn-success" onclick="ques4_10c()">Tính tổng</button>
+        <button type="button" class="btn btn-success" onclick="ques4_10t()">Tính Trừ</button>
+        <button type="button" class="btn btn-success" onclick="ques4_10n()">Tính Nhân</button>
+        <button type="button" class="btn btn-success" onclick="ques4_10ch()">Tính Chia</button>
+
+    </div>
+    <hr>
+
+    <h2>Exercise 8: Demo Project</h2>
+    <h3>Question 1: </h3>
+    <div class="card" style="width: 35rem;">
+        <div class="card-body">
+            <h5 class="card-title">Máy tính</h5>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="number2.1">Number1</span>
+                </div>
+                <input type="text" class="form-control" id="number1" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="number2.1">Number2</span>
+                </div>
+                <input type="text" class="form-control" id="number2" aria-describedby="basic-addon3">
+            </div> <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" >Kết quả</span>
+                </div>
+                <input type="text" class="form-control" id="kqua" aria-describedby="basic-addon3">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger" onclick="cong()">Cộng</button>
+            <button type="button" class="btn btn-warning">Trừ</button>
+            <button type="button" class="btn btn-info">Nhân</button>
+            <button type="button" class="btn btn-light">Chia</button>
+            <button type="button" class="btn btn-dark">%</button> 
+        </div>
+    </div>
+
+
+</body>
+<script src="assignment3.js"></script>
+
+</html>

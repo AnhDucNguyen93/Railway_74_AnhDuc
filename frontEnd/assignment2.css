@@ -1,0 +1,83 @@
+div.Question1 p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    border: 1px solid blue;
+    padding: 5px;
+}
+div.Question2 p {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-left: 70px;
+    border: 1px solid blue;
+}
+div.Question21 p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 520px;
+    border: 1px solid blue;
+    padding: 5px;
+}
+div.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+p.vhfull, div.tho {
+    text-align: center;
+    font-size: 20px;
+}
+
+div.left {
+    margin-left: 100px;
+}
+p.vhfull {
+    text-transform: uppercase;
+    background-color: blueviolet;
+}
+div.tho {
+    background-color: yellow;
+}
+div.hoatuoi h2.red{
+    color: red;
+    text-align: center;
+}
+table.tabIt {
+    margin: auto;
+    border-collapse: collapse;
+    width: 650px;
+}
+table.tabIt td,th {
+    border: 2px solid rebeccapurple;
+}
+#center{
+    text-align: center;
+}
+#red{
+    background-color: red;
+    color: aliceblue;
+}
+p.phieu{
+    text-align: center;
+    color: green;
+   font-size: 25px;}
+table.tabPhieu td,th{
+    border: 1px solid blueviolet;
+    padding: 7px;
+    font-size: 15px;
+}
+td.tdHt{
+    width: 40%;
+}
+td.tdInput{
+    width: 60%;
+}
+table.tabPhieu {
+margin: auto;
+width: 80%;
+background-color: rgb(132, 220, 132);
+border-collapse: collapse;
+
+}

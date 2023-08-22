@@ -1,0 +1,31 @@
+#id_1{
+    color: rgb(32, 32, 27);
+}
+.item{
+    width: 33.3%;
+}
+div.item{
+    color: rgb(0, 255, 47);
+}
+div h3{
+    color: red;
+}
+.item2{
+    height: 40px;
+}
+.item2:hover{
+    background-color: rgb(198, 192, 255) !important;
+
+    cursor: pointer;
+}
+.box1{
+    background-color: yellow;
+}
+.box2{
+    background-color: aqua;
+    margin: 20px 100px;
+}
+.box3{
+    background-color: brown;
+    margin: 10px 90px 30px ;
+}
