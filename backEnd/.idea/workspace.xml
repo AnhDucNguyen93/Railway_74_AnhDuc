@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f8c824a-8624-45b8-9802-25710516bb77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java/Assignment_7/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Assignment_7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Assignment_7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Assignment_7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/backend/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/backend/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/backend/repository/IAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/backend/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/backend/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/entity/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/frontEnd/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/frontEnd/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/frontEnd/TestHibernateProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/utils/HibernateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/utils/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/java/com/vti/utils/ScannerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/resources/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/test/java/com/vti/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/src/test/test1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/backend/controller/AccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/backend/repository/AccountRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/backend/repository/IAccountRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/backend/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/backend/service/IAccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/entity/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/entity/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/frontEnd/Function.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/frontEnd/Program.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/frontEnd/TestHibernateProgram.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/utils/HibernateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/utils/JdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/com/vti/utils/ScannerUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/LoginOut" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/html/account-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/html/home-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/BaiTap1/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontEnd/loginOut" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/assignment3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/assignment3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/assignment3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/assignment3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/lesson3.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Uhw6zly795zrt5dFiGLsndhulo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vti.demospring.DemoSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f8c824a-8624-45b8-9802-25710516bb77" name="Default Changelist" comment="" />
+      <created>1693404950836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693404950836</updated>
+      <workItem from="1693404952091" duration="436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
