@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment3</title>
-    <link rel="stylesheet" href="assignment3.css">
+    <link rel="stylesheet" href="css\assignment3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -82,6 +82,10 @@
         <button type="button" class="btn btn-success" onclick="ques4_10t()">Tính Trừ</button>
         <button type="button" class="btn btn-success" onclick="ques4_10n()">Tính Nhân</button>
         <button type="button" class="btn btn-success" onclick="ques4_10ch()">Tính Chia</button>
+        <div>
+            <div><b>Kết quả</b></div>
+        </div>
+        <input type="text" class="form-control" id="ketqua4_10" aria-describedby="basic-addon3">
 
     </div>
     <hr>
@@ -102,24 +106,140 @@
                     <span class="input-group-text" id="number2.1">Number2</span>
                 </div>
                 <input type="text" class="form-control" id="number2" aria-describedby="basic-addon3">
-            </div> <div class="input-group mb-3">
+            </div>
+            <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" >Kết quả</span>
+                    <span class="input-group-text">Kết quả</span>
                 </div>
                 <input type="text" class="form-control" id="kqua" aria-describedby="basic-addon3">
             </div>
         </div>
         <div>
             <button type="button" class="btn btn-danger" onclick="cong()">Cộng</button>
-            <button type="button" class="btn btn-warning">Trừ</button>
-            <button type="button" class="btn btn-info">Nhân</button>
-            <button type="button" class="btn btn-light">Chia</button>
-            <button type="button" class="btn btn-dark">%</button> 
+            <button type="button" class="btn btn-warning" onclick="tru()">Trừ</button>
+            <button type="button" class="btn btn-info" onclick="nhan()">Nhân</button>
+            <button type="button" class="btn btn-light" onclick="chia()">Chia</button>
+            <button type="button" class="btn btn-dark " onclick="chiadu()">%</button>
         </div>
     </div>
+    <hr>
+    <h3>Question 1: </h3>
+    <h4><b>Tính chu vi diện tích</b></h4>
+    <table class="tabtinh">
+        <tr>
+            <td>Nhập độ dài chiều thứ nhất</td>
+            <td>
+                <input type="text" id="chdai1">
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập độ dài chiều thứ nhất</td>
+            <td>
+                <input type="text" id="chdai2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="button" value="Tính toán" onclick="tinhCvDt()">
+            </td>
+        </tr>
+        <tr>
+            <td>Chu vi là:</td>
+            <td>
+                <input type="text" id="chuvi">
+            </td>
+        </tr>
+        <tr>
+            <td>Diện tích là: </td>
+            <td>
+                <input type="text" id="dientich">
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Question 5: </h3>
+    <button type="button" class="btn btn-danger" onclick="factorialResult()">Nhập</button>
+    <i>Lưu ý là 1 số từ 1 đến 50</i>
+    <hr>
+    <h3>Question 9: </h3>
+
+    <h4 style="text-align: center;"><b>Form khảo sát thông tin cá nhân:</b></h4>
+    <form class="form" onclick="kstt()">
+        <table class="tabtinh">
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" value="Đăng" id="hoTen"></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td><input type="text" id="sdt" placeholder="0825294200"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td><input type="radio" name="gender" value="Nam">Nam
+                    <input type="radio" name="gender" value="Nữ">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" name="like" value="Nghe Nhạc" checked>Nghe nhạc <br>
+                    <input type="checkbox" name="like" value="Bóng đá">Bóng đá <br>
+                    <input type="checkbox" name="like" value="Du lịch" checked>Du lịch <br>
+                    <input type="checkbox" name="like" value="Đọc sách">Đọc sách <br>
+                </td>
+            </tr>
+        </table>
+        <div class="button">
+            <button type="submit">Hiển thị</button>
+        </div>
+    </form><br>
+
+    <h3>Question 9: </h3><br>
+    <form onsubmit="return FornValiDate()">
+        <h3>Điền thông tin</h3>
+        <div class="form-group row">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Họ và tên </label>
+            <div class="col-sm-10">
+                <input class="form-control" id="name" placeholder="NGUYEN VAN A">
+            </div>
+            <span style="color: red; margin-left: 15px;" id="errorName"></span>
+        </div>
+
+        <div class="form-group row">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Số điện thoại</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="phone" placeholder="0986264665">
+            </div>
+            <span style="color: red; margin-left: 15px;" id="errorPhone"></span>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="email" placeholder="@gmail.com">
+            </div>
+            <span style="color: red; margin-left: 15px;" id="errorEmail"></span>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Mật khẩu</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="pass">
+                <span style="color: red; margin-left: 15px;" id="errorPass"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Xác nhận mật khẩu</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="pass2">
+                <span style="color: red; margin-left: 15px;" id="errorPass2"></span>
+
+            </div>
+        </div>
+        <input type="submit" value="Gửi"> <input type="reset" value="Xóa">
+    </form>
 
 
 </body>
-<script src="assignment3.js"></script>
+<script src="js\assignment3.js"></script>
 
 </html>
