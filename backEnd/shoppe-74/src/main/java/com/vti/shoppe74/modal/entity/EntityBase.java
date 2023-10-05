@@ -1,6 +1,8 @@
 package com.vti.shoppe74.modal.entity;
 
 import lombok.Data;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -25,13 +27,17 @@ public class EntityBase {
 
     @PrePersist
     public void prePersist(){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication(); //Khởi tạo hàm để hiển thị userName đã thực thi
+        String username = auth.getName();
         this.createDate = new Date();
-        this.createBy = "Mr.Duc";
+        this.createBy = username;
     }
     @PreUpdate
     public void preUpdate(){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication(); //Khởi tạo hàm để hiển thị userName đã update
+        String username = auth.getName();
         this.updateDate = new Date();
-        this.updateBy = "Mr.Duc";
+        this.updateBy = username;
     }
 
 }

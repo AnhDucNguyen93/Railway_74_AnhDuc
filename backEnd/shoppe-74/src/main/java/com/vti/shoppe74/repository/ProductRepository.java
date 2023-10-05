@@ -12,4 +12,6 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> , JpaSpecificationExecutor<Product> {
    // @Query("select p from Product p where p.productName like %?1%")
     List<Product> findByProductNameContainsAndProductTypeIn(String productName, List<ProductType> productTypes);
+
+    boolean existsByProductName(String productName);
 }

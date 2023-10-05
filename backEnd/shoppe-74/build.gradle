@@ -24,6 +24,10 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
@@ -32,7 +36,15 @@ dependencies {
     implementation 'org.apache.poi:poi:4.1.2'
     // https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
     implementation 'io.springfox:springfox-boot-starter:3.0.0'  // DÙng để config swgger
-
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.8'
+// Gradle thư viện
+    implementation 'io.jsonwebtoken:jjwt:0.7.0'
+    implementation 'com.auth0:auth0:1.0.0'
+    implementation 'com.auth0:auth0-spring-security-api:1.0.0-rc.2'
+// Công cụ 1 thằng chuối string, json
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.alibaba:fastjson:1.2.76'
 }
 
 tasks.named('test') {

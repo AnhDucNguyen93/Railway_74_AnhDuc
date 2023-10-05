@@ -22,7 +22,7 @@ public class Account extends EntityBase {
     private long id;
 
     @Column(name= "USERNAME", columnDefinition = "nvarchar(100)", nullable = false, unique = true)
-    private  String userName;
+    private  String username;
 
     @Column(name= "FULL_NAME", columnDefinition = "nvarchar(100)")
     private String fullName;
@@ -50,6 +50,6 @@ public class Account extends EntityBase {
     private  Role role;
 
     public Account(AccountCreateDto createDto){
-        this.userName = createDto.getUserName();
+        this.username = createDto.getUserName();
     }
 }

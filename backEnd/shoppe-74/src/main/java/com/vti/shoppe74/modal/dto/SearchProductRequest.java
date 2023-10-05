@@ -8,17 +8,17 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class SearchProDuctRequest {
+public class SearchProductRequest {
     private String productName;
     private List<ProductType> productTypes;
     private List<ShippingUnit> shippingUnits;
     private List<ProductStatus> productStatus;
-    private Long minPrice;
-    private Long maxPrice;
+    private long minPrice;
+    private long maxPrice;
 
     // Các thuộc tính để phân trang và sắp xếp
     private int page;
     private int size;
-    private String sortby; // THuộc tính của entity trong java (VD: "price")
+    private String sortBy; // THuộc tính của entity trong java (VD: "price")
     private String sortType; // Có 2 giá trị là: ASC, DESC
 }

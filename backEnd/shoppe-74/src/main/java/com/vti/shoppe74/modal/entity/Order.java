@@ -21,7 +21,7 @@ public class Order extends EntityBase {
 
     @Column(name = "ORDER_STATUS")
     @Enumerated(EnumType.STRING)
-    private OderStatus oderStatus;
+    private OrderStatus orderStatus;
 
     @Column(name = "QUANTITY")
     private  int quantity;

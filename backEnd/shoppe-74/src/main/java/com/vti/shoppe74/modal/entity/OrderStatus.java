@@ -1,5 +1,5 @@
 package com.vti.shoppe74.modal.entity;
 
-public enum OderStatus {
+public enum OrderStatus {
     PENDING, DONE, CANCEL
 }
