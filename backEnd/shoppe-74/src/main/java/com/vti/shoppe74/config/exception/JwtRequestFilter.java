@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+// Bước này tạo ra authentication giống vs authorities ở AccountSerivce
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
     private static final String AUTHORIZATION = "Authorization";
@@ -40,17 +40,19 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 || StringUtils.containsAnyIgnoreCase(request, "/v3/api-docs")) {
             // Những api public ko cần check token -> doFilter
             filterChain.doFilter(httpServletRequest, httpServletResponse);
-        } else {
+        } else {   // Dưới đây là những API cần check token
             // Kiểm tra token & Giải mã token -> lấy thông tin user -> authen
             AccountLoginResponse loginDto = jwtTokenUtils.checkToken(token, httpServletResponse, httpServletRequest);
-            // Lấy danh sách quyền của user vd ADMIN, USER
-            List<GrantedAuthority> authorities = new ArrayList<>();
-            authorities.add(loginDto.getRole());
-            // Tạo đối tượng để Authen vào hệ thống
-            UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
-                    loginDto.getUsername(), null, authorities);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
-            filterChain.doFilter(httpServletRequest, httpServletResponse);
+            if(loginDto != null){
+                // Lấy danh sách quyền của user vd ADMIN, USER
+                List<GrantedAuthority> authorities = new ArrayList<>();
+                authorities.add(loginDto.getRole());
+                // Tạo đối tượng để Authen vào hệ thống
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
+                        loginDto.getUsername(), null, authorities);
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+                filterChain.doFilter(httpServletRequest, httpServletResponse);
+            }
         }
     }
 }

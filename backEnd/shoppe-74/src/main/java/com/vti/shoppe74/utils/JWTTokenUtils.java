@@ -68,16 +68,16 @@ public class JWTTokenUtils {
         return loginDto;
     }
 
-
+// Check token
     public AccountLoginResponse checkToken(String token, HttpServletResponse response, HttpServletRequest httpServletRequest) {
-        AccountLoginResponse loginDto = new AccountLoginResponse();
+        AccountLoginResponse loginDto = null;
         try {
             if (StringUtils.isBlank(token) || !token.startsWith(PREFIX_TOKEN)) { // token bị trống -> lỗi
                 responseJson(response, new AppExceptionDto("Token ko hợp lệ", 401, httpServletRequest.getRequestURI()));
                 return null;
             }
             token = token.replace(PREFIX_TOKEN, "").trim();
-             loginDto = parseAccessToken(token);
+            loginDto = parseAccessToken(token);
             if (loginDto == null) { // Ko có token trên hệ thống
                 responseJson(response, new AppExceptionDto("Token ko tồn tại hoặc hết hạn",401, httpServletRequest.getRequestURI()));
                 return null;

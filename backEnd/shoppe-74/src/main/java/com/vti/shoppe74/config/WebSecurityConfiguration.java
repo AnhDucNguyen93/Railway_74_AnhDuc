@@ -5,6 +5,7 @@ import com.vti.shoppe74.service.impl.AccountSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -13,6 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration // kết hợp với @Bean để tạo thành 1 bean trong spring IOC
 @EnableWebSecurity
@@ -44,6 +46,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 // tắt tính năng Cross-Site Request Forgery (CSRF) trong Spring Security.
                 .and().cors().and().csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+// Khai báo lớp filter sẽ được thực hiện trước khi phân quyền
+        http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
     @Override // Config cho đường dẫn (swagger) ko bị chặn bởi security
